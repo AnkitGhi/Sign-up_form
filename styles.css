@@ -1,0 +1,104 @@
+@font-face{
+    font-family: 'NorseFont';
+    src: url('./Norse-Bold.otf');
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container {
+    background-image: url('./leaves.jpg');
+    background-size: cover;
+    width: max(400px,35vw);
+    height: 120vh;
+    flex: 0 0 auto;
+    display:flex;
+    flex-direction: column;
+    font-family: 'NorseFont',sans-serif;
+}
+.right-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: max(400px,100vw);
+    padding-bottom: 10px;
+}
+
+.first,
+.second,
+.third{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+    
+button{
+    padding:8px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 5%;
+}
+
+form{
+    padding-bottom: 30px;
+}
+input{
+    border: 2px solid grey; 
+  }
+
+.logotxt{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    left: min(100px,20vw);  
+    
+}
+.bgcolor{
+    position: relative;
+    top: 200px;
+    background-color: black;
+    opacity:0.6;
+}
+.txt{
+    font-size: 30px;
+    color: white;
+}
+.texts,
+.form,
+.final{
+    padding-left: 30px;
+
+}
+input:focus {
+    outline: none;
+    border-color: #00c8ff;
+    box-shadow: 1px 1px 5px #333333;
+}
+
+.form{
+    box-shadow: 5px 5px 5px 5px #cccccc;
+    margin-bottom: 30px;
+}
+.login{
+    color:green;
+    font-weight: 200;
+}
+
+.login:hover{
+    text-decoration: underline;
+}
+
+button:hover{
+    background-color:aquamarine;
+}
+.cite{
+    color: white;
+    position: relative;
+    left: 170px;
+    top: 500px;
+}
